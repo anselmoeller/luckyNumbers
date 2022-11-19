@@ -1,0 +1,236 @@
+:root{
+    --backgroundColor: #4f7e93;
+    --mainDarkColor:#000;
+    --mainLigthColor:#FFF;
+    --secondaryLigthColor:#96c0ee;
+    --lightColorText:#c4c4c4;
+    --luckNumbers:#08d808;
+    --subTitlesColor:rgb(0, 84, 148);
+}
+
+/* the main styles and rules...*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color:var(--backgroundColor);
+}
+.mainContent{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* the title style*/
+header{
+    height: 100px;
+    width: 100%;
+}
+.h1HeaderArea{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    text-align: center;
+}
+.titleFirstFrase a{
+    text-decoration: none;
+    color:var(--luckNumbers);
+}
+.underlineTitle{
+    background-color: var(--mainLigthColor);
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+.subTitleArea{
+    margin-left: 15px;
+    align-content: center;
+    word-wrap: break-word;
+    text-align: center;
+}
+.subTitle a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    color: var(--mainLigthColor);
+}
+.underlineSubTitle{
+    background-color: var(--luckNumbers);
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* the display numbers random area*/
+.showNumbersRandomizedArea{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.randomizedNumbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    cursor: copy;
+}
+
+/* --------------   ----------------------*/
+.minNumberArea,
+.maxNumberArea,
+.howManyNumbersArea
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btnRandomNumbers,
+.btnClearNumbers,
+.btnCopyNumbers {
+    padding: 5px;
+    border: 1px solid var(--backgroundColor);
+    border-radius: 5px;
+}
+.btnRandomNumbers:hover, 
+.btnClearNumbers:hover, 
+.btnCopyNumbers:hover{
+    cursor: pointer;
+    color: var(--secondaryLigthColor);
+}
+#minNumber,
+#maxNumber,
+#howManyNumbers{
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    padding: 3px;
+    font-size: 17px;
+}
+.labelStyleStandard{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: var(--mainDarkColor);
+    margin-block: 5px;
+}
+
+/* ----------------------  -----------------------*/
+
+.repeatNumberOrNotArea{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 7px;
+    background-color: #366882;
+    border-radius: 7px;
+}
+
+#repeatModeYes,
+#repeatModeNo {
+    margin-inline: 5px;  
+}
+
+.labelRepeatYes{
+    padding: 0 10px 0 0;
+    color: var(--lightColorText);
+}
+.labelRepeatNo{
+    padding: 0 5px 0 0;
+    color: var(--lightColorText);
+}
+.labelRepeatYes:hover{
+    cursor: pointer;
+    padding: 0 10px 0 0;
+    color: var(--secondaryLigthColor);
+}
+.labelRepeatNo:hover{
+    cursor: pointer;
+    padding: 0 5px 0 0;
+    color: var(--secondaryLigthColor);
+}
+
+/*-----------------  footer -----------------------*/
+
+.footerContentArea{
+    height: 30px;
+    width: 100%;
+}
+.smallFooterText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: var(--lightColorText);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*-------------------go to top ---------------*/
+.goToTop{
+    position:fixed;
+    font-weight: bolder;
+    color: var(--mainLigthColor);
+    background-color: #366882;
+    border-radius: 7px;
+    padding: 2px 10px;
+    bottom: 7%;
+    right: 5%;
+    font-size:30px;
+    cursor: pointer;
+}
+.goToTop a{
+    text-decoration: none;
+    color:inherit;
+}
+.goToTop:hover{
+    color: #08d808; 
+    opacity: 0.7; 
+}
+
+/* ------------------   messageCopied to show ----------------*/
+.messageCopy{
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: rgb(3, 126, 1);
+    padding: 5px;
+    background-color: var(--mainLigthColor);
+    border-radius: 5px;
+}
+
+/*---------- Resposivity ------------- */
+@media(max-width: 600px){
+    .titleFirstFrase a{
+        font-size: 21px;
+    }
+    .subTitle a{
+        font-size: 21px;
+    }
+}
+@media(max-width: 400px){
+    .h1HeaderArea{
+        flex-direction: column;
+    }
+    .mainContent{
+        margin-top: 20px;
+    }
+}

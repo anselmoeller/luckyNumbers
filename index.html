@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anselmo de Paula Eller">
+    <link rel="shortcut icon" href="./img/baseline_casino_white_24dp.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lucky Numbers By Anselmo Eller</title>
+</head>
+<body>
+    <header id="TopSite">
+        <h1 class="h1HeaderArea">
+            <div>
+                <span class="titleFirstFrase">
+                    <a href="index.html">Lucky Numbers</a>
+                </span>
+                <div class="underlineTitle"></div>
+            </div>
+            <div class="subTitleArea">
+                <span class="subTitle">
+                    <a href="index.html" >Which Are Yours?</a>
+                </span>
+                <div class="underlineSubTitle"></div>
+            </div>
+        </h1>
+    </header>
+    <main class="mainContent">
+        <section class="minNumberArea">
+            <label class="labelStyleStandard" for="minNumber">Type the Min Number</label>
+            <input id="minNumber" type="number" placeholder="Example: 0">
+        </section>
+        <section class="maxNumberArea">
+            <label class="labelStyleStandard"for="maxNumber">Type the max Number</label>
+            <input id="maxNumber" type="number" placeholder="Example: 10792">
+        </section>
+        <section class="howManyNumbersArea"> 
+            <label class="labelStyleStandard"for="howManyNumbers">Quantity of numbers to random</label>
+            <input id="howManyNumbers" type="number" placeholder="Example: 5">
+        </section>
+        <section class="repeatNumberOrNotArea">
+            <input id="repeatModeYes" type="radio" name="repeatNumberOrNot">
+            <label for="repeatModeYes" class="labelRepeatYes">Repeat</label>
+            <input id="repeatModeNo" type="radio" name="repeatNumberOrNot" checked>
+            <label for="repeatModeNo" class="labelRepeatNo">No Repeat</label>
+        </section>
+        <section>
+            <button class="btnRandomNumbers">Random It!</button>
+            <button class="btnClearNumbers" hidden>Clear All</button>
+            <button class="btnCopyNumbers" hidden>Copy</button>
+        </section>
+
+        <section class="showNumbersRandomizedArea" hidden>
+            <p class="randomizedNumbers"></p>
+        </section>
+        <div class="messageCopy" hidden>Copied!</div>
+        <aside class="goToTop" hidden>
+            <a href="#TopSite">
+                &uarr;
+            </a>
+        </aside>
+    </main>
+    <footer class="footerContentArea">
+        <small class="smallFooterText">Created by Anselmo De Paula Eller</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
